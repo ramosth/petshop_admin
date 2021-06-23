@@ -38,6 +38,9 @@ function App() {
           <Route exact path="/produtos">
             <Produtos />
           </Route>
+          <Route exact path="/produtos/cadastrar">
+            <FormProduto />
+          </Route>
           <Route path="/produtos/:id">
             <Produto />
           </Route>
@@ -49,9 +52,6 @@ function App() {
           </Route>
           <Route path="/cadastro">
             <Cadastro />
-          </Route>
-          <Route path="/produtos/cadastrar">
-            <FormProduto />
           </Route>
         </Switch>
       </BrowserRouter>
