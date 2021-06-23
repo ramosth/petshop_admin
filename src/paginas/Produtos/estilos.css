@@ -1,0 +1,94 @@
+.addNovoProduto {
+  background-color: #FF9A16;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+  margin-bottom: 16px;
+  margin-left: 15px;
+}
+
+.titulo {
+  display: inline-block;
+}
+
+.tabela {
+  width: 100%;
+}
+.tabela, .tabela th, .tabela td {
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabela th, .tabela td {
+  padding: 5px;
+}
+
+.tabela th{
+  background-color: #1abc9c;
+  color: #000;
+}
+
+.fundoTabela {
+  /* background-color: #1abc9c; */
+  border-radius: 5px;
+  border-style: none;
+  /* border-color: #1abc9c; */
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.btnExcluir {
+  width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #DA0037;
+    border: 3px solid #DA0037;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.btnEditar {
+  width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #FF9A16;
+    border: 3px solid #FF9A16;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+.btnVisualizar {
+  width: 100%;
+  color:#000;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #5c7084;
+    border: 3px solid #5c7084;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.btnExcluir:hover {
+  background-color: #DA0037;
+  color: #000;
+  border: 3px solid #DA0037;
+}
+
+.btnEditar:hover {
+  background-color: #FF9A16;
+  color: #000;
+  border: 3px solid #FF9A16;
+}
+
+.btnVisualizar:hover {
+  background-color: #5c7084;
+  color: #000;
+  border: 3px solid #5c7084;
+}

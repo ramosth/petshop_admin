@@ -1,0 +1,26 @@
+.navbar {
+  background: #2c3e50; 
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar ul {
+  padding: 12px;
+  margin: 0;
+}
+.navbar ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: 100;
+}
+.navbar ul li a {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
