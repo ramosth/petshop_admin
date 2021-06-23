@@ -1,23 +1,60 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+import Produtos from './paginas/Produtos'
+import Produto from './paginas/Produto';
+import Servicos from './paginas/Servicos'
+import Navbar from './paginas/componentes/Navbar';
+import Login from './paginas/Login';
+import Cadastro from './paginas/Cadastro';
+import FormProduto from './paginas/FormProduto';
 
 function App() {
+
+  const menu = [
+    {
+      titulo: 'Produtos',
+      link: '/produtos'
+    },
+    {
+      titulo: 'Servicos',
+      link: '/servicos'
+    },
+    {
+      titulo: 'Cadastre-se',
+      link: '/cadastro'
+    },
+    {
+      titulo: 'Login',
+      link: '/login'
+    },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar navbar={menu} />
+        <Switch>
+          <Route exact path="/produtos">
+            <Produtos />
+          </Route>
+          <Route path="/produtos/:id">
+            <Produto />
+          </Route>
+          <Route exact path="/servicos">
+            <Servicos />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/cadastro">
+            <Cadastro />
+          </Route>
+          <Route path="/produtos/cadastrar">
+            <FormProduto />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
